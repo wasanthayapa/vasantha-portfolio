@@ -1,4 +1,5 @@
 // app/page.tsx
+import Link from "next/link";
 import { caseStudies, competencies } from "@/lib/data";
 
 const Pill = ({ children }: { children: React.ReactNode }) => (
@@ -26,6 +27,12 @@ export default function Home() {
             <a href="#case-studies" className="hover:text-white">Case Studies</a>
             <a href="#competencies" className="hover:text-white">Competencies</a>
             <a href="#contact" className="hover:text-white">Contact</a>
+            <Link
+              href="/cse"
+              className="rounded-full border border-[#6ea8fe]/30 bg-[#6ea8fe]/10 px-3 py-0.5 text-[#6ea8fe] hover:bg-[#6ea8fe]/20"
+            >
+              CSE Analyzer
+            </Link>
           </div>
         </div>
 
